@@ -18,9 +18,7 @@ import hky.member.service.MemSelect;
 import hky.member.service.MemSelectAll;
 import hky.member.service.MemUpdate;
 import hky.member.service.MemUpdateView;
-import hky.post.service.Comment;
 import hky.post.service.PostDelete;
-//import hky.post.service.PostDownload;
 import hky.post.service.PostInsert;
 import hky.post.service.PostInsertView;
 import hky.post.service.PostSearch;
@@ -204,14 +202,6 @@ public class FrontController extends HttpServlet {
 				actionCommand = action.execute(request, response);
 			} catch (Exception e) {
 				log.info("글 목록 검색 실패 - " + e);
-			}
-		}
-		else if (pathURI.equals("/Comment.do")) {
-			action = new Comment();
-			try {
-				actionCommand = action.execute(request, response);
-			} catch (Exception e) {
-				log.info("다운로드 실패 - " + e);
 			}
 		}
 		
