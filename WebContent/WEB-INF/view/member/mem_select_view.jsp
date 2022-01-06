@@ -57,7 +57,7 @@
 		<div class="text-center text-white">
 			<h1 class="display-6 fw-bolder"> 회원 정보 확인 </h1>
 			<p class="lead fw-normal text-white-50 mb-0">
-				<a href="./MemSelect.do">회원 목록</a></p>
+				<a href="./MemSelectAll.do">회원 목록</a></p>
 		</div>
 	</div>
 </header>
