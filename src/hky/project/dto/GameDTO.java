@@ -3,8 +3,8 @@ package hky.project.dto;
 public class GameDTO {
 	private int gameNumber;
 	private String gameName;
-	private String platForm;
-	private String genre;
+	private String gamePlatform;
+	private String gameGenre;
 	private String gameDate;
 	private String gameImage;
 	public int getGameNumber() {
@@ -19,17 +19,17 @@ public class GameDTO {
 	public void setGameName(String gameName) {
 		this.gameName = gameName;
 	}
-	public String getPlatForm() {
-		return platForm;
+	public String getGamePlatform() {
+		return gamePlatform;
 	}
-	public void setPlatForm(String platForm) {
-		this.platForm = platForm;
+	public void setGamePlatform(String gamePlatform) {
+		this.gamePlatform = gamePlatform;
 	}
-	public String getGenre() {
-		return genre;
+	public String getGameGenre() {
+		return gameGenre;
 	}
-	public void setGenre(String genre) {
-		this.genre = genre;
+	public void setGameGenre(String gameGenre) {
+		this.gameGenre = gameGenre;
 	}
 	public String getGameDate() {
 		return gameDate;
@@ -45,8 +45,9 @@ public class GameDTO {
 	}
 	@Override
 	public String toString() {
-		return "GameDTO [gameNumber=" + gameNumber + ", gameName=" + gameName + ", platForm=" + platForm + ", genre="
-				+ genre + ", gameDate=" + gameDate + ", gameImage=" + gameImage + "]";
+		return "GameDTO [gameNumber=" + gameNumber + ", gameName=" + gameName + ", gamePlatform=" + gamePlatform
+				+ ", gameGenre=" + gameGenre + ", gameDate=" + gameDate + ", gameImage=" + gameImage + "]";
 	}
+	
 	
 }

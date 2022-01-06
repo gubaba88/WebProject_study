@@ -1,0 +1,35 @@
+create table member(
+memId varchar2(12) primary key,
+memPasswd varchar2(15),
+memEmail varchar2(25),
+memName varchar2(12),
+memPhone varchar2(15),
+memBirth Date,
+memGender char(1),
+memAddress varchar2(90),
+memComment varchar2(90),
+memPoint number(7),
+memDate Date,
+memNumber number(7)
+);
+create table boardList(
+gameNumber number(2) primary key,
+gameName varchar2(30),
+gamePlatform varchar2(15),
+gameGenre varchar2(21),
+gameDate Date,
+gameImage varchar2(30)
+);
+create table board0(
+postNumber number(10) primary key,
+postTopic varchar2(6),
+postTitle varchar2(60),
+memId varchar2(12),
+postContent varchar2(900),
+postDate Date,
+fileName varchar2(60)
+);
+//테이블 추가시
+CREATE TABLE board1 AS
+SELECT * FROM board0 WHERE 1=2;
+commit;

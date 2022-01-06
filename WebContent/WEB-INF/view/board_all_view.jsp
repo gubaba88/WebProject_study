@@ -68,7 +68,7 @@
 						<div class="text-center">
 						<!-- Product name-->
 							<h5 class="fw-bolder">${gameDTO.gameName}</h5>
-							${gameDTO.platForm} / ${gameDTO.genre}<br>
+							${gameDTO.gamePlatform} / ${gameDTO.gameGenre}<br>
 							${gameDTO.gameDate} 출시
 						</div>
 					</div>
